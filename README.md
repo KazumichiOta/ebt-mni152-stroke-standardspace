@@ -268,7 +268,7 @@ Use of source data remains subject to the original ATLAS R2.0 terms.
 If you use these released data or scripts, please cite the associated article and the repository DOI.
 
 **Article (provisional; update when finalized)**  
-Ota K, Nakazato Y, Oyama G, *et al.*  
+Ota K, Nakazato Y, Oyama G.
 *Standard-space selection in stroke magnetic resonance imaging: an elderly brain template reduces deformation bias and preserves lesion geometry.*
 
 **Repository DOI (this version)**  
