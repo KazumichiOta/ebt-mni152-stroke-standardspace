@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+outputs/
+.Rhistory
+.RData
+*.pdf
+*.png
+*.jpg
+*.jpeg
