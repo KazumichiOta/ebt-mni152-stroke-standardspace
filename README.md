@@ -1,4 +1,4 @@
-[![DOI (concept)](https://zenodo.org/badge/DOI/[CONCEPT-DOI].svg)](https://doi.org/[CONCEPT-DOI])
+[![DOI (concept)](https://zenodo.org/badge/DOI/10.5281/zenodo.19472368.svg)](https://doi.org/10.5281/zenodo.19472368)
 
 # 1. Overview
 
@@ -272,10 +272,10 @@ Ota K, Nakazato Y, Oyama G.
 *Standard-space selection in stroke magnetic resonance imaging: an elderly brain template reduces deformation bias and preserves lesion geometry.*
 
 **Repository DOI (this version)**  
-`[VERSION-DOI-HERE]`
+`https://doi.org/10.5281/zenodo.19472369`
 
 **Repository DOI (concept DOI; always latest)**  
-`[CONCEPT-DOI-HERE]`
+`https://doi.org/10.5281/zenodo.19472368`
 
 **Related template repository**  
 `elderly-brain-template`
