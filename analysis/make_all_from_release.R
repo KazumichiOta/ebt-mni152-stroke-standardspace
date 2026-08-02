@@ -290,16 +290,24 @@ EQ_ASSD <- calc_equiv(d_assd, margin = 0.10)
 
 Table3 <- tibble(
   Measure = c("Dice", "ASSD (mm)", "Lesion logJ mean"),
-  `MNI152 (mean±SD)` = c(
-    fmt_mean_sd(mean(dice_mni[ok_dice]), sd(dice_mni[ok_dice]), 3),
-    fmt_mean_sd(mean(assd_mni[ok_assd]), sd(assd_mni[ok_assd]), 3),
-    "—"
-  ),
-  `EBT (mean±SD)` = c(
-    fmt_mean_sd(mean(dice_ebt[ok_dice]), sd(dice_ebt[ok_dice]), 3),
-    fmt_mean_sd(mean(assd_ebt[ok_assd]), sd(assd_ebt[ok_assd]), 3),
-    "—"
-  ),
+`MNI152 (mean±SD)` = c(
+  fmt_mean_sd(mean(dice_mni[ok_dice]), sd(dice_mni[ok_dice]), 3),
+  fmt_mean_sd(mean(assd_mni[ok_assd]), sd(assd_mni[ok_assd]), 3),
+  fmt_mean_sd(
+    mean(llj2$meanLogJ_MNI_les),
+    sd(llj2$meanLogJ_MNI_les),
+    3
+  )
+),
+`EBT (mean±SD)` = c(
+  fmt_mean_sd(mean(dice_ebt[ok_dice]), sd(dice_ebt[ok_dice]), 3),
+  fmt_mean_sd(mean(assd_ebt[ok_assd]), sd(assd_ebt[ok_assd]), 3),
+  fmt_mean_sd(
+    mean(llj2$meanLogJ_EBT_les),
+    sd(llj2$meanLogJ_EBT_les),
+    3
+  )
+),
   `Delta (95% CI)` = c(
     fmt_delta_ci(mean(d_dice), unname(t_dice$conf.int[1]), unname(t_dice$conf.int[2]), 3),
     fmt_delta_ci(mean(d_assd), unname(t_assd$conf.int[1]), unname(t_assd$conf.int[2]), 3),
