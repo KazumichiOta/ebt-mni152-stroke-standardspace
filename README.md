@@ -806,7 +806,7 @@ Ota K, Nakazato Y, Oyama G.
 
 **Repository DOI (this version)**
 
-https://doi.org/<ZENODO_V1.1_DOI>
+https://doi.org/10.5281/zenodo.21841387
 
 **Repository DOI (concept DOI; always latest)**
 
