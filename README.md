@@ -18,7 +18,7 @@ Specifically, this repository includes:
 - released lesion round-trip geometry metrics in native space,
 - released lesion-wise log-Jacobian summaries and lesion volumes,
 - a mask-definition sensitivity table based on subject-derived brain masks warped to each template space,
-- a released summary table for the supplementary lentiform-to-lesion round-trip analysis,
+- subject-level selection and distance tables for the supplementary lentiform-anchored lesion-location analysis,
 - the included subject list,
 - scripts for regenerating key released derived data from a local ATLAS-based working directory,
 - scripts for reproducing the main manuscript tables, figures, and key supplementary analyses from the released data.
@@ -33,15 +33,16 @@ ATLAS R2.0 subject-level MRI images and lesion masks are **not redistributed** i
 ebt-mni152-stroke-standardspace/
 ├─ analysis/
 │  ├─ build_release_metrics_tsv.py
-│  ├─ compute_lesion_logjac_volume_T1_MNI_EBT.py
-│  ├─ recompute_lesion_roundtrip_dice_assd.py
-│  ├─ compute_ventricle_brain_fraction.py
 │  ├─ compute_lentiform_lesion_dist_native_roundtrip.py
-│  ├─ select_lentiform_subset_from_full_cohort.py
-│  └─ make_all_from_release.R
+│  ├─ compute_lesion_logjac_volume_T1_MNI_EBT.py
+│  ├─ compute_ventricle_brain_fraction.py
+│  ├─ make_all_from_release.R
+│  ├─ recompute_lesion_roundtrip_dice_assd.py
+│  └─ select_lentiform_subset_from_full_cohort.py
 ├─ data/
 │  ├─ bg_CC_gradCC_subjectmask_warp_table.tsv
-│  ├─ lentiform_lesion_dist_noLentLesion_table.tsv
+│  ├─ lentiform_lesion_dist_native_roundtrip.tsv
+│  ├─ lentiform_selection_all_subjects.tsv
 │  ├─ lesion_logjac_volume_T1_MNI_EBT.tsv
 │  ├─ lesion_roundtrip_dice_assd_native.tsv
 │  ├─ release_per_subject_metrics.tsv
@@ -140,16 +141,16 @@ This file is used to reproduce Supplementary Table S4.
 
 ---
 
-## 3.5 `data/lentiform_lesion_dist_noLentLesion_table.tsv`
+## 3.5 `data/lentiform_selection_all_subjects.tsv`
 
 **Description**
 
-Released summary table for the supplementary lentiform-to-lesion center-of-mass (COM) round-trip analysis.
+Subject-level audit table for reconstructing the supplementary lentiform-anchored lesion-location analysis from the full study cohort.
 
-The underlying analysis was restricted to subjects with:
+The selection criteria were:
 
-1. a single contiguous lesion, and
-2. no lesion voxels within the SynthSeg-derived lentiform nucleus.
+1. a single contiguous native-space lesion, and
+2. no lesion voxels within the bilateral SynthSeg-derived lentiform nucleus.
 
 The lentiform nucleus was defined as the **bilateral putamen and pallidum** using SynthSeg labels:
 
@@ -160,7 +161,7 @@ The lentiform nucleus was defined as the **bilateral putamen and pallidum** usin
 
 A single contiguous lesion was defined as one 3D connected component using **26-connectivity**.
 
-For the manuscript dataset, the independently reproduced selection flow was:
+For the manuscript dataset, the reproduced selection flow was:
 
 ```text
 Full cohort:                    603
@@ -169,39 +170,62 @@ No lentiform lesion:           114
 Final analysis subset:         114
 ```
 
-The CST-overlap criterion was **not** used for this supplementary lentiform analysis.
+The CST-overlap criterion was **not** used for this supplementary analysis.
 
-The table contains the group-level values reported in Supplementary Table S8, including:
+The table provides the subject-level inclusion and exclusion status used to identify the final analysis subset.
 
-- native-space lentiform-to-lesion COM distance,
-- MNI152 round-trip distance,
-- EBT round-trip distance,
-- MNI152 round-trip distance error,
-- EBT round-trip distance error,
-- between-template error difference,
-- paired t-test result.
-
-Round-trip distance error was defined as:
+For Supplementary Table S8, subjects with:
 
 ```text
-|dist_round-trip − dist_native|
+final_include == TRUE
 ```
 
-The subject-selection procedure can be independently reconstructed using:
-
-```text
-analysis/select_lentiform_subset_from_full_cohort.py
-```
-
-and the subject-level distances can be regenerated from a local ATLAS working directory using:
-
-```text
-analysis/compute_lentiform_lesion_dist_native_roundtrip.py
-```
+are retained.
 
 ---
 
-## 3.6 `data/subjects_included.xlsx`
+## 3.6 `data/lentiform_lesion_dist_native_roundtrip.tsv`
+
+**Description**
+
+Released subject-level measurements for the supplementary lentiform-anchored lesion-location analysis.
+
+The file contains the 3D Euclidean distance between the center of mass (COM) of the native-space bilateral lentiform nucleus and the lesion COM for:
+
+- the original native-space lesion,
+- the MNI152 round-tripped lesion,
+- the EBT round-tripped lesion.
+
+The lentiform nucleus is defined as the bilateral putamen and pallidum using SynthSeg labels:
+
+```text
+12, 13, 51, 52
+```
+
+Round-trip distance errors are calculated as:
+
+```text
+err_MNI = |dist_MNIround − dist_native|
+err_EBT = |dist_EBTround − dist_native|
+```
+
+Supplementary Table S8 is reconstructed by combining this file with:
+
+```text
+data/lentiform_selection_all_subjects.tsv
+```
+
+and retaining subjects with:
+
+```text
+final_include == TRUE
+```
+
+The resulting final analysis subset contains **n = 114** subjects.
+
+---
+
+## 3.7 `data/subjects_included.xlsx`
 
 **Description**
 
@@ -312,14 +336,14 @@ The resulting ventricular fraction is used as an imaging-based proxy of atrophy 
 
 **Purpose**
 
-Reconstructs the subject subset used for the supplementary lentiform-to-lesion COM analysis directly from the full study cohort.
+Reconstructs the subject subset used for the supplementary lentiform-anchored lesion-location analysis directly from the full study cohort.
 
 The script applies the actual selection criteria used for this analysis:
 
 1. single contiguous native-space lesion,
 2. no lesion voxels within the bilateral SynthSeg-derived lentiform nucleus.
 
-The single-lesion criterion uses 3D connected-component labeling with 26-connectivity.
+The single-lesion criterion uses 3D connected-component labeling with **26-connectivity**.
 
 For the manuscript dataset, the script reproduces:
 
@@ -335,14 +359,19 @@ corresponding to:
 114 cases with no lesion voxels within the lentiform nucleus
 ```
 
-**Main outputs**
+**Main output**
 
 ```text
 lentiform_selection_all_subjects.tsv
-lentiform_final_subset.tsv
 ```
 
-The first output provides an auditable subject-level record of inclusion and exclusion across the full cohort.
+This output provides an auditable subject-level record of inclusion and exclusion across the full cohort.
+
+The final analysis subset is identified using:
+
+```text
+final_include == TRUE
+```
 
 ---
 
@@ -350,7 +379,7 @@ The first output provides an auditable subject-level record of inclusion and exc
 
 **Purpose**
 
-Computes the 3D Euclidean distance between the COM of the native-space lentiform nucleus and the lesion COM.
+Computes the 3D Euclidean distance between the COM of the native-space bilateral lentiform nucleus and the lesion COM.
 
 Distances are calculated for:
 
@@ -377,7 +406,7 @@ err_MNI = |dist_MNIround − dist_native|
 err_EBT = |dist_EBTround − dist_native|
 ```
 
-The manuscript Supplementary Table S8 was obtained from the single-lesion cases without lesion involvement of the lentiform nucleus.
+For Supplementary Table S8, these measurements are restricted to the single-lesion cases without lesion involvement of the lentiform nucleus.
 
 ---
 
@@ -403,6 +432,21 @@ bg_CC_gradCC_subjectmask_warp_table.tsv
 
 for the mask-definition sensitivity analysis.
 
+For the supplementary lentiform-anchored lesion-location analysis, the script uses:
+
+```text
+lentiform_selection_all_subjects.tsv
+lentiform_lesion_dist_native_roundtrip.tsv
+```
+
+The two files are combined at the subject level, and subjects satisfying:
+
+```text
+final_include == TRUE
+```
+
+are retained to reconstruct the final **n = 114** analysis subset and Supplementary Table S8.
+
 **Typical outputs include**
 
 ```text
@@ -418,18 +462,11 @@ S4_subjectmask_*.tsv
 S5_lesionVol_regression.tsv
 S6_absMeanLogJ_vs_ASSD.tsv
 S7_intralesional_dlogJ_tertiles.tsv
+S8_lentiform_lesion_distance.tsv
 S9_ventricle_fraction_dCC.tsv
 ```
 
 The exact output filenames may vary slightly with the release version of the script.
-
-Supplementary Table S8 is provided separately as:
-
-```text
-data/lentiform_lesion_dist_noLentLesion_table.tsv
-```
-
-because it derives from the dedicated lentiform-analysis pipeline described above.
 
 ---
 
@@ -458,9 +495,27 @@ The resulting analyses include:
 - lesion-volume supplementary regression models,
 - association between the absolute value of intralesional mean logJ and round-trip ASSD,
 - intralesional logJ analyses by lesion-volume tertile,
-- mask-definition sensitivity analysis.
+- mask-definition sensitivity analysis,
+- reconstruction of the supplementary lentiform-anchored lesion-location analysis.
 
-Supplementary Table S8 is supplied directly as a released summary table and can be independently regenerated from the dedicated lentiform scripts if the required source images and intermediate files are available locally.
+Supplementary Table S8 is reconstructed from:
+
+```text
+data/lentiform_selection_all_subjects.tsv
+data/lentiform_lesion_dist_native_roundtrip.tsv
+```
+
+by retaining subjects with:
+
+```text
+final_include == TRUE
+```
+
+The expected final subset is:
+
+```text
+n = 114
+```
 
 ---
 
@@ -526,6 +581,16 @@ python analysis/compute_ventricle_brain_fraction.py \
   --root /path/to/ATLAS_workdir
 ```
 
+Ventricular volume is defined from SynthSeg labels:
+
+```text
+4, 5, 14, 15, 43, 44
+```
+
+corresponding to the bilateral lateral ventricles, bilateral inferior lateral ventricles, third ventricle, and fourth ventricle.
+
+Intracranial volume (ICV) is defined as the total volume of all voxels with a nonzero SynthSeg label.
+
 The resulting ventricular fraction can be incorporated into the released per-subject metrics table.
 
 ---
@@ -540,16 +605,30 @@ python analysis/select_lentiform_subset_from_full_cohort.py \
 For the manuscript dataset, the expected selection flow is:
 
 ```text
-Full cohort                         : 603
+Full cohort                          : 603
 Single contiguous lesion            : 279
 + no lesion within lentiform nucleus: 114
 Final eligible subset               : 114
 ```
 
+The lentiform nucleus is defined as the bilateral putamen and pallidum using SynthSeg labels:
+
+```text
+12, 13, 51, 52
+```
+
+A single contiguous lesion is defined using 3D connected-component labeling with 26-connectivity.
+
 A successful reproduction should end with:
 
 ```text
 [OK] Selection reproduced: 603 -> 279 -> 114.
+```
+
+**Output**
+
+```text
+lentiform_selection_all_subjects.tsv
 ```
 
 ---
@@ -563,21 +642,59 @@ python analysis/compute_lentiform_lesion_dist_native_roundtrip.py \
 
 The script computes subject-level native, MNI152 round-trip, and EBT round-trip lentiform-to-lesion COM distances.
 
-For Supplementary Table S8, these measurements are restricted to the 114 subjects selected by the lentiform-analysis criteria described above.
+**Output**
+
+```text
+lentiform_lesion_dist_native_roundtrip.tsv
+```
+
+For Supplementary Table S8, these measurements are combined with:
+
+```text
+lentiform_selection_all_subjects.tsv
+```
+
+and restricted to subjects with:
+
+```text
+final_include == TRUE
+```
+
+The expected final analysis subset is **n = 114**.
 
 ---
 
 # 7. Interpretation of the lentiform supplementary analysis
 
-The supplementary lentiform analysis was designed as an additional check of relative lesion position after round-trip transformation.
+The supplementary lentiform analysis was designed as an additional check of relative lesion location after round-trip transformation.
 
 It does **not** test CST overlap and does not use CST overlap as an inclusion criterion.
+
+The analysis is restricted to cases with:
+
+1. a single contiguous lesion, and
+2. no lesion voxels within the bilateral lentiform nucleus.
 
 The purpose of the analysis is to assess whether switching standard spaces produces gross changes in the spatial relationship between a lesion and a stable deep gray-matter landmark.
 
 The lentiform nucleus was therefore used as an anatomical anchor, and the native-space lentiform-to-lesion COM distance was compared with the corresponding distance after MNI152 and EBT round-trip transformation.
 
-The final analysis subset contained 114 cases.
+The final analysis subset contained **114 cases**.
+
+For the manuscript dataset, the reconstructed group-level values are approximately:
+
+```text
+Native distance             ≈ 51.15 ± 19.26 mm
+MNI152 round-trip distance  ≈ 51.16 ± 19.25 mm
+EBT round-trip distance     ≈ 51.15 ± 19.26 mm
+MNI152 distance error       ≈ 0.04 ± 0.05 mm
+EBT distance error          ≈ 0.04 ± 0.05 mm
+Δerror (EBT − MNI152)       ≈ 0.0007 mm
+95% CI                      ≈ −0.0089 to 0.0103 mm
+paired t-test p             ≈ 0.884
+```
+
+These measurements are provided as an additional check of preservation of relative lesion location under the two standard-space conditions.
 
 ---
 
@@ -588,7 +705,7 @@ This repository does **not** redistribute ATLAS R2.0 subject-level MRI images or
 Only the following are provided:
 
 - derived numerical metrics,
-- released summary tables,
+- subject-level derived analysis tables,
 - supporting subject identifiers,
 - reproducibility scripts.
 
@@ -689,7 +806,7 @@ Ota K, Nakazato Y, Oyama G.
 
 **Repository DOI (this version)**
 
-https://doi.org/10.5281/zenodo.19472369
+https://doi.org/<ZENODO_V1.1_DOI>
 
 **Repository DOI (concept DOI; always latest)**
 
