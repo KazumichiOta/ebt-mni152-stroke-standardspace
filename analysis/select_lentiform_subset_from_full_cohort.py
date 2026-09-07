@@ -26,7 +26,11 @@ Definitions reproduced from the original analysis scripts
 Expected input files
 --------------------
 ROOT/sub-*/anat/T1lesion_mask.nii.gz
-ROOT/sub-*/anat/synthseg_native/labels.nii.gz
+ROOT/sub-*/anat/synthseg_native_wholehead_robust/labels.nii.gz
+
+The SynthSeg label maps used in the final analysis were generated in
+robust mode from N4-corrected native whole-head T1-weighted images before
+skull stripping.
 
 Outputs
 -------
@@ -40,7 +44,7 @@ Single contiguous lesion:    n = 279
 No lentiform lesion:         n = 114
 
 This script performs subject selection only. It does not calculate the
-lentiform-to-lesion round-trip distances used in Supplementary Table S8.
+lentiform-to-lesion round-trip distances used in Supplementary Table S9.
 """
 
 from __future__ import annotations
@@ -99,8 +103,11 @@ def main() -> None:
     parser.add_argument(
         "--root",
         type=Path,
-        default=Path("/Users/kazumichiota/Desktop/ATLAS_2_simple"),
-        help="Root directory containing sub-* subject folders.",
+        required=True,
+        help=(
+            "Root ATLAS-derived working directory containing "
+            "sub-* subject folders."
+        ),
     )
 
     parser.add_argument(
@@ -167,7 +174,11 @@ def main() -> None:
         anat = sub_dir / "anat"
 
         lesion_path = anat / "T1lesion_mask.nii.gz"
-        synthseg_path = anat / "synthseg_native" / "labels.nii.gz"
+        synthseg_path = (
+            anat
+            / "synthseg_native_wholehead_robust"
+            / "labels.nii.gz"
+        )
 
         row = {
             "subject": sid,

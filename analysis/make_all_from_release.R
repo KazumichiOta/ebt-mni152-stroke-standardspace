@@ -13,18 +13,18 @@
 #   Figures (separate PDFs, Illustrator-friendly):
 #     Fig2A_CC_vs_lesionVol.pdf
 #     Fig2B_wholebrain_mean_logJ.pdf
-#     Fig3A_dDice_margins.pdf
-#     Fig3B_dASSD_margins.pdf
-#     Fig3C_lesion_mean_logJ.pdf
-#     Fig4_dCC_vs_ventricle_fraction.pdf
+#     Fig3_dCC_vs_ventricle_fraction.pdf
+#     Fig4A_dDice_margins.pdf
+#     Fig4B_dASSD_margins.pdf
+#     Fig4C_lesion_mean_logJ.pdf
 #
 #   Supplementary tables:
 #     S4_subjectmask_fairness.tsv
-#     S5_lesionVol_regression.tsv
-#     S6_absMeanLogJ_vs_ASSD.tsv
-#     S7_intralesional_dlogJ_tertiles.tsv
-#     S8_lentiform_lesion_distance.tsv
-#     S9_ventricle_fraction_dCC.tsv
+#     S5_ventricle_fraction_dCC.tsv
+#     S6_lesionVol_regression.tsv
+#     S7_absMeanLogJ_vs_ASSD.tsv
+#     S8_intralesional_dlogJ_tertiles.tsv
+#     S9_lentiform_lesion_distance.tsv
 #
 # Inputs (default: <root>/data)
 #   release_per_subject_metrics.tsv
@@ -36,7 +36,7 @@
 #   lentiform_selection_all_subjects.tsv
 #   lentiform_lesion_dist_native_roundtrip.tsv
 #
-# S8 reconstruction
+# S9 reconstruction
 #   The lentiform supplementary analysis is reconstructed by joining:
 #
 #     lentiform_selection_all_subjects.tsv
@@ -53,7 +53,7 @@
 # Notes
 #   - Uses base pdf() (no cairo/X11 dependency)
 #   - Uses ASCII-only plot labels to avoid Unicode rendering issues
-#   - S8 uses the subject-level distance measurements rather than the
+#   - S9 uses the subject-level distance measurements rather than the
 #     precomputed summary table, allowing independent regeneration of
 #     the reported supplementary statistics.
 
@@ -180,19 +180,19 @@ FIG2B_H <- as.numeric(
 )
 
 FIG3_W <- as.numeric(
-  get_arg("--fig3-w", "3.4")
+  get_arg("--fig4-w", "3.4")
 )
 
 FIG3_H <- as.numeric(
-  get_arg("--fig3-h", "4.5")
+  get_arg("--fig4-h", "4.5")
 )
 
 FIG4_W <- as.numeric(
-  get_arg("--fig4-w", "6.8")
+  get_arg("--fig3-w", "6.8")
 )
 
 FIG4_H <- as.numeric(
-  get_arg("--fig4-h", "4.8")
+  get_arg("--fig3-h", "4.8")
 )
 
 BASE_SIZE <- as.numeric(
@@ -1539,7 +1539,7 @@ cat(
 
 
 # ========================================================================
-# Figure 3A / 3B / 3C
+# Figure 4A / 4B / 4C
 # Lesion round-trip geometry and intralesional logJ
 # ========================================================================
 
@@ -1579,49 +1579,49 @@ MARGIN_LTY <- "dashed"
 
 FIG3_W <- as.numeric(
   get_arg(
-    "--fig3-w",
+    "--fig4-w",
     "3.4"
   )
 )
 
 FIG3_H <- as.numeric(
   get_arg(
-    "--fig3-h",
+    "--fig4-h",
     "4.5"
   )
 )
 
 FIG3A_YMIN <- as.numeric(
   get_arg(
-    "--fig3a-ymin",
+    "--fig4a-ymin",
     "-0.065"
   )
 )
 
 FIG3A_YMAX <- as.numeric(
   get_arg(
-    "--fig3a-ymax",
+    "--fig4a-ymax",
     "0.065"
   )
 )
 
 FIG3B_YMIN <- as.numeric(
   get_arg(
-    "--fig3b-ymin",
+    "--fig4b-ymin",
     "-0.20"
   )
 )
 
 FIG3B_YMAX <- as.numeric(
   get_arg(
-    "--fig3b-ymax",
+    "--fig4b-ymax",
     "0.20"
   )
 )
 
 FIG3_JIT_WIDTH <- as.numeric(
   get_arg(
-    "--fig3-jit-width",
+    "--fig4-jit-width",
     "0.35"
   )
 )
@@ -1708,12 +1708,12 @@ fig3_df <- lrt %>%
   )
 
 if (nrow(fig3_df) < 10) {
-  stop("[FATAL] Too few rows for Fig3A/B")
+  stop("[FATAL] Too few rows for Fig4A/B")
 }
 
 
 # ------------------------------------------------------------------------
-# Figure 3A
+# Figure 4A
 # Delta Dice
 # ------------------------------------------------------------------------
 
@@ -1800,7 +1800,7 @@ p3a <- ggplot(
 
 out3a <- file.path(
   OUTDIR,
-  "Fig3A_dDice_margins.pdf"
+  "Fig4A_dDice_margins.pdf"
 )
 
 safe_pdf(
@@ -1821,7 +1821,7 @@ cat(
 
 
 # ------------------------------------------------------------------------
-# Figure 3B
+# Figure 4B
 # Delta ASSD
 # ------------------------------------------------------------------------
 
@@ -1908,7 +1908,7 @@ p3b <- ggplot(
 
 out3b <- file.path(
   OUTDIR,
-  "Fig3B_dASSD_margins.pdf"
+  "Fig4B_dASSD_margins.pdf"
 )
 
 safe_pdf(
@@ -1929,7 +1929,7 @@ cat(
 
 
 # ------------------------------------------------------------------------
-# Figure 3C
+# Figure 4C
 # Intralesional mean logJ
 # ------------------------------------------------------------------------
 
@@ -1983,7 +1983,7 @@ fig3c_df <- llj %>%
   )
 
 if (nrow(fig3c_df) < 10) {
-  stop("[FATAL] Too few rows for Fig3C")
+  stop("[FATAL] Too few rows for Fig4C")
 }
 
 
@@ -2009,14 +2009,14 @@ fig3c_long <- fig3c_df %>%
 
 FIG3C_W <- as.numeric(
   get_arg(
-    "--fig3c-w",
+    "--fig4c-w",
     "4.5"
   )
 )
 
 FIG3C_H <- as.numeric(
   get_arg(
-    "--fig3c-h",
+    "--fig4c-h",
     "4.5"
   )
 )
@@ -2083,7 +2083,7 @@ p3c <- ggplot(
 
 out3c <- file.path(
   OUTDIR,
-  "Fig3C_lesion_mean_logJ.pdf"
+  "Fig4C_lesion_mean_logJ.pdf"
 )
 
 safe_pdf(
@@ -2104,7 +2104,7 @@ cat(
 
 
 # ========================================================================
-# Figure 4
+# Figure 3
 # Delta CC versus ventricular fraction
 # ========================================================================
 
@@ -2134,21 +2134,21 @@ fig4_df <- rel %>%
 
 if (nrow(fig4_df) < 10) {
   stop(
-    "[FATAL] Too few rows for Figure 4"
+    "[FATAL] Too few rows for Figure 3"
   )
 }
 
 
 FIG4_W <- as.numeric(
   get_arg(
-    "--fig4-w",
+    "--fig3-w",
     "6.8"
   )
 )
 
 FIG4_H <- as.numeric(
   get_arg(
-    "--fig4-h",
+    "--fig3-h",
     "4.5"
   )
 )
@@ -2176,7 +2176,7 @@ p4 <- ggplot(
   ) +
 
   labs(
-    x = "Ventricle fraction (ventricular volume / ICV)",
+    x = "Ventricular fraction (ventricular volume / ICV)",
     y = "dCC (EBT - MNI152)"
   ) +
 
@@ -2187,7 +2187,7 @@ p4 <- ggplot(
 
 out4 <- file.path(
   OUTDIR,
-  "Fig4_dCC_vs_ventricle_fraction.pdf"
+  "Fig3_dCC_vs_ventricle_fraction.pdf"
 )
 
 safe_pdf(
@@ -2247,7 +2247,7 @@ if (file.exists(SUBMASK_SUMMARY)) {
 
 
 # ========================================================================
-# Supplementary Table S5
+# Supplementary Table S6
 # Lesion-volume regression with covariates
 # ========================================================================
 
@@ -2436,7 +2436,7 @@ write_tsv(
   S5,
   file.path(
     OUTDIR,
-    "S5_lesionVol_regression.tsv"
+    "S6_lesionVol_regression.tsv"
   )
 )
 
@@ -2444,14 +2444,14 @@ cat(
   "[INFO] wrote:",
   file.path(
     OUTDIR,
-    "S5_lesionVol_regression.tsv"
+    "S6_lesionVol_regression.tsv"
   ),
   "\n"
 )
 
 
 # ========================================================================
-# Supplementary Table S6
+# Supplementary Table S7
 # Absolute value of intralesional mean logJ versus ASSD
 # ========================================================================
 
@@ -2692,7 +2692,7 @@ write_tsv(
   S6,
   file.path(
     OUTDIR,
-    "S6_absMeanLogJ_vs_ASSD.tsv"
+    "S7_absMeanLogJ_vs_ASSD.tsv"
   )
 )
 
@@ -2700,7 +2700,7 @@ cat(
   "[INFO] wrote:",
   file.path(
     OUTDIR,
-    "S6_absMeanLogJ_vs_ASSD.tsv"
+    "S7_absMeanLogJ_vs_ASSD.tsv"
   ),
   "\n"
 )
@@ -2746,7 +2746,7 @@ cat(
 
 
 # ========================================================================
-# Supplementary Table S7
+# Supplementary Table S8
 # Intralesional dlogJ by lesion-volume tertiles
 # ========================================================================
 
@@ -2885,7 +2885,7 @@ write_tsv(
   S7,
   file.path(
     OUTDIR,
-    "S7_intralesional_dlogJ_tertiles.tsv"
+    "S8_intralesional_dlogJ_tertiles.tsv"
   )
 )
 
@@ -2893,14 +2893,14 @@ cat(
   "[INFO] wrote:",
   file.path(
     OUTDIR,
-    "S7_intralesional_dlogJ_tertiles.tsv"
+    "S8_intralesional_dlogJ_tertiles.tsv"
   ),
   "\n"
 )
 
 
 # ========================================================================
-# Supplementary Table S8
+# Supplementary Table S9
 # Lentiform-to-lesion COM distance after round-trip transformation
 # ========================================================================
 #
@@ -3066,7 +3066,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 final subset n =",
+    "[CHECK] S9 final subset n =",
     n_s8,
     "\n"
   )
@@ -3075,7 +3075,7 @@ if (
   if (n_s8 == 0) {
 
     stop(
-      "[FATAL] S8 subset contains zero subjects."
+      "[FATAL] S9 subset contains zero subjects."
     )
   }
 
@@ -3084,7 +3084,7 @@ if (
 
     warning(
       paste0(
-        "[WARN] S8 expected n = 114, but reconstructed n = ",
+        "[WARN] S9 expected n = 114, but reconstructed n = ",
         n_s8,
         "."
       )
@@ -3227,7 +3227,7 @@ if (
 
   S8_OUT <- file.path(
     OUTDIR,
-    "S8_lentiform_lesion_distance.tsv"
+    "S9_lentiform_lesion_distance.tsv"
   )
 
 
@@ -3249,7 +3249,7 @@ if (
   # ----------------------------------------------------------------------
 
   cat(
-    "[CHECK] S8 native distance mean/SD:",
+    "[CHECK] S9 native distance mean/SD:",
     sprintf(
       "%.6f / %.6f",
       mean(
@@ -3264,7 +3264,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 MNI distance mean/SD:",
+    "[CHECK] S9 MNI distance mean/SD:",
     sprintf(
       "%.6f / %.6f",
       mean(
@@ -3279,7 +3279,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 EBT distance mean/SD:",
+    "[CHECK] S9 EBT distance mean/SD:",
     sprintf(
       "%.6f / %.6f",
       mean(
@@ -3294,7 +3294,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 MNI error mean/SD:",
+    "[CHECK] S9 MNI error mean/SD:",
     sprintf(
       "%.6f / %.6f",
       mean(
@@ -3309,7 +3309,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 EBT error mean/SD:",
+    "[CHECK] S9 EBT error mean/SD:",
     sprintf(
       "%.6f / %.6f",
       mean(
@@ -3324,7 +3324,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 delta error mean/SD:",
+    "[CHECK] S9 delta error mean/SD:",
     sprintf(
       "%.6f / %.6f",
       s8_delta_mean,
@@ -3335,7 +3335,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 delta error 95% CI:",
+    "[CHECK] S9 delta error 95% CI:",
     sprintf(
       "%.6f to %.6f",
       s8_ci_l,
@@ -3346,7 +3346,7 @@ if (
 
 
   cat(
-    "[CHECK] S8 paired t-test p:",
+    "[CHECK] S9 paired t-test p:",
     sprintf(
       "%.6f",
       s8_p
@@ -3358,7 +3358,7 @@ if (
 } else {
 
   cat(
-    "[INFO] S8 skipped because one or more input files were not found.\n"
+    "[INFO] S9 skipped because one or more input files were not found.\n"
   )
 
   cat(
@@ -3376,7 +3376,7 @@ if (
 
 
 # ========================================================================
-# Supplementary Table S9
+# Supplementary Table S5
 # Ventricular fraction versus dCC
 # ========================================================================
 
@@ -3476,7 +3476,7 @@ S9 <- tibble(
     "dCC (CC_EBT - CC_MNI152)",
 
   Predictor =
-    "Ventricle fraction",
+    "Ventricular fraction",
 
   `beta (95% CI)` =
     fmt_delta_ci(
@@ -3516,7 +3516,7 @@ write_tsv(
   S9,
   file.path(
     OUTDIR,
-    "S9_ventricle_fraction_dCC.tsv"
+    "S5_ventricle_fraction_dCC.tsv"
   )
 )
 
@@ -3524,7 +3524,7 @@ cat(
   "[INFO] wrote:",
   file.path(
     OUTDIR,
-    "S9_ventricle_fraction_dCC.tsv"
+    "S5_ventricle_fraction_dCC.tsv"
   ),
   "\n"
 )

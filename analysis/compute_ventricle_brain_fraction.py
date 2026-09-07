@@ -24,11 +24,11 @@ Expected input structure
 ROOT/
 ├── sub-XXX/
 │   └── anat/
-│       └── synthseg_native/
+│       └── synthseg_native_wholehead_robust/
 │           └── labels.nii.gz
 ├── sub-YYY/
 │   └── anat/
-│       └── synthseg_native/
+│       └── synthseg_native_wholehead_robust/
 │           └── labels.nii.gz
 └── ...
 
@@ -93,7 +93,7 @@ VENTRICLE_LABELS = (4, 5, 14, 15, 43, 44)
 CSF_LABELS = (24,)
 
 SYNTHSEG_NATIVE = os.path.join(
-    "synthseg_native",
+    "synthseg_native_wholehead_robust",
     "labels.nii.gz",
 )
 
@@ -111,7 +111,7 @@ def parse_args() -> argparse.Namespace:
         required=True,
         help=(
             "Root ATLAS-derived working directory containing "
-            "sub-*/anat/synthseg_native/labels.nii.gz."
+            "sub-*/anat/synthseg_native_wholehead_robust/labels.nii.gz."
         ),
     )
 
@@ -496,6 +496,7 @@ def main() -> None:
         writer = csv.writer(
             file_obj,
             delimiter="\t",
+            lineterminator="\n",
         )
 
         writer.writerow(

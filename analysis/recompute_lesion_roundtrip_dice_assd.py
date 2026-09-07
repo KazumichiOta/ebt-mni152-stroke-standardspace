@@ -54,7 +54,7 @@ def assd(a, b, spacing):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="/Volumes/Extreme Pro/ATLAS2.0/ATLAS_2_simple")
+    ap.add_argument("--root", required=True)
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 

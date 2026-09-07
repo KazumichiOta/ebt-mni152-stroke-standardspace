@@ -38,6 +38,7 @@ ebt-mni152-stroke-standardspace/
 │  ├─ compute_ventricle_brain_fraction.py
 │  ├─ make_all_from_release.R
 │  ├─ recompute_lesion_roundtrip_dice_assd.py
+│  ├─ run_synthseg_native_wholehead_robust.sh
 │  └─ select_lentiform_subset_from_full_cohort.py
 ├─ data/
 │  ├─ bg_CC_gradCC_subjectmask_warp_table.tsv
@@ -174,7 +175,7 @@ The CST-overlap criterion was **not** used for this supplementary analysis.
 
 The table provides the subject-level inclusion and exclusion status used to identify the final analysis subset.
 
-For Supplementary Table S8, subjects with:
+For Supplementary Table S9, subjects with:
 
 ```text
 final_include == TRUE
@@ -209,7 +210,7 @@ err_MNI = |dist_MNIround − dist_native|
 err_EBT = |dist_EBTround − dist_native|
 ```
 
-Supplementary Table S8 is reconstructed by combining this file with:
+Supplementary Table S9 is reconstructed by combining this file with:
 
 ```text
 data/lentiform_selection_all_subjects.tsv
@@ -301,11 +302,39 @@ The rigid component is excluded from log-Jacobian calculations because rigid tra
 
 ---
 
-## 4.4 `analysis/compute_ventricle_brain_fraction.py`
+## 4.4 `analysis/run_synthseg_native_wholehead_robust.sh`
 
 **Purpose**
 
-Computes ventricular fraction from native-space SynthSeg segmentation.
+Generates the native-space SynthSeg parcellation used for the ventricular-fraction and lentiform analyses.
+
+The script uses the N4-corrected native whole-head T1-weighted image:
+
+```text
+sub-*/anat/T1w_n4.nii.gz
+```
+
+SynthSeg is run with:
+
+```text
+--parc --robust
+```
+
+The resulting label maps are written to:
+
+```text
+sub-*/anat/synthseg_native_wholehead_robust/labels.nii.gz
+```
+
+No HD-BET skull stripping, 0-1 intensity normalization, or BM4D filtering is applied before SynthSeg.
+
+---
+
+## 4.5 `analysis/compute_ventricle_brain_fraction.py`
+
+**Purpose**
+
+Computes ventricular fraction from native-space SynthSeg segmentation generated in robust mode from N4-corrected native whole-head T1-weighted images before skull stripping.
 
 Ventricular volume is defined using SynthSeg labels corresponding to:
 
@@ -332,11 +361,11 @@ The resulting ventricular fraction is used as an imaging-based proxy of atrophy 
 
 ---
 
-## 4.5 `analysis/select_lentiform_subset_from_full_cohort.py`
+## 4.6 `analysis/select_lentiform_subset_from_full_cohort.py`
 
 **Purpose**
 
-Reconstructs the subject subset used for the supplementary lentiform-anchored lesion-location analysis directly from the full study cohort.
+Reconstructs the subject subset used for the supplementary lentiform-anchored lesion-location analysis directly from the full study cohort. The lentiform labels are derived from the same native-space SynthSeg robust segmentation generated from N4-corrected whole-head T1-weighted images before skull stripping.
 
 The script applies the actual selection criteria used for this analysis:
 
@@ -375,11 +404,11 @@ final_include == TRUE
 
 ---
 
-## 4.6 `analysis/compute_lentiform_lesion_dist_native_roundtrip.py`
+## 4.7 `analysis/compute_lentiform_lesion_dist_native_roundtrip.py`
 
 **Purpose**
 
-Computes the 3D Euclidean distance between the COM of the native-space bilateral lentiform nucleus and the lesion COM.
+Computes the 3D Euclidean distance between the COM of the native-space bilateral lentiform nucleus and the lesion COM. The lentiform nucleus is derived from the same native-space SynthSeg robust segmentation generated from N4-corrected whole-head T1-weighted images before skull stripping.
 
 Distances are calculated for:
 
@@ -406,11 +435,11 @@ err_MNI = |dist_MNIround − dist_native|
 err_EBT = |dist_EBTround − dist_native|
 ```
 
-For Supplementary Table S8, these measurements are restricted to the single-lesion cases without lesion involvement of the lentiform nucleus.
+For Supplementary Table S9, these measurements are restricted to the single-lesion cases without lesion involvement of the lentiform nucleus.
 
 ---
 
-## 4.7 `analysis/make_all_from_release.R`
+## 4.8 `analysis/make_all_from_release.R`
 
 **Purpose**
 
@@ -445,7 +474,7 @@ The two files are combined at the subject level, and subjects satisfying:
 final_include == TRUE
 ```
 
-are retained to reconstruct the final **n = 114** analysis subset and Supplementary Table S8.
+are retained to reconstruct the final **n = 114** analysis subset and Supplementary Table S9.
 
 **Typical outputs include**
 
@@ -454,19 +483,18 @@ Table2.tsv
 Table3.tsv
 Fig2A_CC_vs_lesionVol.pdf
 Fig2B_wholebrain_mean_logJ.pdf
-Fig3A_dDice_margins.pdf
-Fig3B_dASSD_margins.pdf
-Fig3C_lesion_mean_logJ.pdf
-Fig4_dCC_vs_ventricle_fraction.pdf
-S4_subjectmask_*.tsv
-S5_lesionVol_regression.tsv
-S6_absMeanLogJ_vs_ASSD.tsv
-S7_intralesional_dlogJ_tertiles.tsv
-S8_lentiform_lesion_distance.tsv
-S9_ventricle_fraction_dCC.tsv
+Fig3_dCC_vs_ventricle_fraction.pdf
+Fig4A_dDice_margins.pdf
+Fig4B_dASSD_margins.pdf
+Fig4C_lesion_mean_logJ.pdf
+S4_subjectmask_fairness.tsv
+S5_ventricle_fraction_dCC.tsv
+S6_lesionVol_regression.tsv
+S7_absMeanLogJ_vs_ASSD.tsv
+S8_intralesional_dlogJ_tertiles.tsv
+S9_lentiform_lesion_distance.tsv
 ```
 
-The exact output filenames may vary slightly with the release version of the script.
 
 ---
 
@@ -498,7 +526,7 @@ The resulting analyses include:
 - mask-definition sensitivity analysis,
 - reconstruction of the supplementary lentiform-anchored lesion-location analysis.
 
-Supplementary Table S8 is reconstructed from:
+Supplementary Table S9 is reconstructed from:
 
 ```text
 data/lentiform_selection_all_subjects.tsv
@@ -574,7 +602,31 @@ lesion_logjac_volume_T1_MNI_EBT.tsv
 
 ---
 
-## 6.4 Ventricular fraction
+## 6.4 SynthSeg robust whole-head segmentation
+
+The ventricular-fraction and lentiform analyses use the same native-space SynthSeg robust segmentation.
+
+```bash
+ROOT=/path/to/ATLAS_workdir SYNTHSEG_CMD=mri_synthseg JOBS=2 bash analysis/run_synthseg_native_wholehead_robust.sh
+```
+
+**Input**
+
+```text
+sub-*/anat/T1w_n4.nii.gz
+```
+
+**Output**
+
+```text
+sub-*/anat/synthseg_native_wholehead_robust/labels.nii.gz
+```
+
+SynthSeg is run with `--parc --robust` on the N4-corrected native whole-head T1-weighted image before skull stripping.
+
+---
+
+## 6.5 Ventricular fraction
 
 ```bash
 python analysis/compute_ventricle_brain_fraction.py \
@@ -595,7 +647,7 @@ The resulting ventricular fraction can be incorporated into the released per-sub
 
 ---
 
-## 6.5 Lentiform-analysis subject selection
+## 6.6 Lentiform-analysis subject selection
 
 ```bash
 python analysis/select_lentiform_subset_from_full_cohort.py \
@@ -633,7 +685,7 @@ lentiform_selection_all_subjects.tsv
 
 ---
 
-## 6.6 Lentiform-to-lesion round-trip distance
+## 6.7 Lentiform-to-lesion round-trip distance
 
 ```bash
 python analysis/compute_lentiform_lesion_dist_native_roundtrip.py \
@@ -648,7 +700,7 @@ The script computes subject-level native, MNI152 round-trip, and EBT round-trip 
 lentiform_lesion_dist_native_roundtrip.tsv
 ```
 
-For Supplementary Table S8, these measurements are combined with:
+For Supplementary Table S9, these measurements are combined with:
 
 ```text
 lentiform_selection_all_subjects.tsv

@@ -42,9 +42,13 @@ ROOT/
 │       ├── T1lesion_mask.nii.gz
 │       ├── T1lesion_MNI_roundtrip.nii.gz
 │       ├── T1lesion_EBT_roundtrip.nii.gz
-│       └── synthseg_native/
+│       └── synthseg_native_wholehead_robust/
 │           └── labels.nii.gz
 └── ...
+
+The SynthSeg label maps used in the final analysis were generated in
+robust mode from N4-corrected native whole-head T1-weighted images before
+skull stripping.
 
 Default output
 --------------
@@ -95,7 +99,7 @@ import numpy as np
 # -------------------------------------------------------------------------
 
 SYNTHSEG_LABELS = os.path.join(
-    "synthseg_native",
+    "synthseg_native_wholehead_robust",
     "labels.nii.gz",
 )
 
@@ -687,6 +691,7 @@ def main() -> None:
         writer = csv.writer(
             file_obj,
             delimiter="\t",
+            lineterminator="\n",
         )
 
         writer.writerow(

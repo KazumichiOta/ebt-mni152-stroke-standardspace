@@ -3,66 +3,66 @@ sub-r001s001	112451	4	False		False	False	multiple_lesion_components
 sub-r001s002	132590	3	False		False	False	multiple_lesion_components
 sub-r001s003	1482	2	False		False	False	multiple_lesion_components
 sub-r001s004	44659	4	False		False	False	multiple_lesion_components
-sub-r001s005	31792	1	True	1505.0	False	False	lesion_within_lentiform
+sub-r001s005	31792	1	True	1559.0	False	False	lesion_within_lentiform
 sub-r001s006	3009	4	False		False	False	multiple_lesion_components
 sub-r001s007	4102	4	False		False	False	multiple_lesion_components
 sub-r001s008	2083	8	False		False	False	multiple_lesion_components
 sub-r001s009	8840	9	False		False	False	multiple_lesion_components
 sub-r001s010	108394	2	False		False	False	multiple_lesion_components
 sub-r001s011	16615	2	False		False	False	multiple_lesion_components
-sub-r001s012	13800	1	True	119.0	False	False	lesion_within_lentiform
+sub-r001s012	13800	1	True	125.0	False	False	lesion_within_lentiform
 sub-r001s013	9456	4	False		False	False	multiple_lesion_components
 sub-r001s014	15149	1	True	18.0	False	False	lesion_within_lentiform
 sub-r001s015	5959	2	False		False	False	multiple_lesion_components
 sub-r001s016	6146	6	False		False	False	multiple_lesion_components
 sub-r001s017	2441	3	False		False	False	multiple_lesion_components
-sub-r001s018	248	1	True	80.0	False	False	lesion_within_lentiform
+sub-r001s018	248	1	True	152.0	False	False	lesion_within_lentiform
 sub-r001s019	80001	3	False		False	False	multiple_lesion_components
-sub-r001s020	78351	1	True	438.0	False	False	lesion_within_lentiform
+sub-r001s020	78351	1	True	3407.0	False	False	lesion_within_lentiform
 sub-r001s021	2509	4	False		False	False	multiple_lesion_components
 sub-r001s022	55	1	True	0.0	True	True	
 sub-r001s023	15	1	True	0.0	True	True	
-sub-r001s024	1040	1	True	27.0	False	False	lesion_within_lentiform
-sub-r001s025	4369	1	True	1767.0	False	False	lesion_within_lentiform
+sub-r001s024	1040	1	True	25.0	False	False	lesion_within_lentiform
+sub-r001s025	4369	1	True	1968.0	False	False	lesion_within_lentiform
 sub-r001s026	3052	2	False		False	False	multiple_lesion_components
 sub-r001s027	1184	2	False		False	False	multiple_lesion_components
 sub-r001s028	277	1	True	0.0	True	True	
-sub-r001s029	2676	1	True	406.0	False	False	lesion_within_lentiform
+sub-r001s029	2676	1	True	404.0	False	False	lesion_within_lentiform
 sub-r001s030	6988	5	False		False	False	multiple_lesion_components
-sub-r001s031	38266	1	True	909.0	False	False	lesion_within_lentiform
+sub-r001s031	38266	1	True	922.0	False	False	lesion_within_lentiform
 sub-r001s032	6309	4	False		False	False	multiple_lesion_components
 sub-r001s033	33231	2	False		False	False	multiple_lesion_components
-sub-r001s034	3191	1	True	263.0	False	False	lesion_within_lentiform
+sub-r001s034	3191	1	True	273.0	False	False	lesion_within_lentiform
 sub-r001s036	6775	4	False		False	False	multiple_lesion_components
 sub-r001s037	24772	5	False		False	False	multiple_lesion_components
 sub-r001s038	203	2	False		False	False	multiple_lesion_components
-sub-r001s039	1105	1	True	129.0	False	False	lesion_within_lentiform
-sub-r002s001	11072	1	True	742.0	False	False	lesion_within_lentiform
+sub-r001s039	1105	1	True	128.0	False	False	lesion_within_lentiform
+sub-r002s001	11072	1	True	700.0	False	False	lesion_within_lentiform
 sub-r002s002	34031	4	False		False	False	multiple_lesion_components
 sub-r002s003	3602	7	False		False	False	multiple_lesion_components
 sub-r002s004	11408	2	False		False	False	multiple_lesion_components
-sub-r002s005	4148	1	True	1414.0	False	False	lesion_within_lentiform
+sub-r002s005	4148	1	True	1401.0	False	False	lesion_within_lentiform
 sub-r002s006	29177	2	False		False	False	multiple_lesion_components
-sub-r002s007	7928	1	True	166.0	False	False	lesion_within_lentiform
-sub-r002s008	78676	1	True	4194.0	False	False	lesion_within_lentiform
-sub-r002s009	55548	1	True	4807.0	False	False	lesion_within_lentiform
-sub-r002s010	152153	1	True	2011.0	False	False	lesion_within_lentiform
+sub-r002s007	7928	1	True	172.0	False	False	lesion_within_lentiform
+sub-r002s008	78676	1	True	4206.0	False	False	lesion_within_lentiform
+sub-r002s009	55548	1	True	4655.0	False	False	lesion_within_lentiform
+sub-r002s010	152153	1	True	2114.0	False	False	lesion_within_lentiform
 sub-r002s011	36236	4	False		False	False	multiple_lesion_components
 sub-r002s012	32314	4	False		False	False	multiple_lesion_components
-sub-r003s001	26316	1	True	4407.0	False	False	lesion_within_lentiform
-sub-r003s002	6688	1	True	1492.0	False	False	lesion_within_lentiform
-sub-r003s003	171930	1	True	3674.0	False	False	lesion_within_lentiform
-sub-r003s004	144031	1	True	3601.0	False	False	lesion_within_lentiform
-sub-r003s005	230745	1	True	3237.0	False	False	lesion_within_lentiform
-sub-r003s006	1104	1	True	251.0	False	False	lesion_within_lentiform
-sub-r003s007	4245	1	True	163.0	False	False	lesion_within_lentiform
-sub-r003s008	140210	1	True	2699.0	False	False	lesion_within_lentiform
+sub-r003s001	26316	1	True	4402.0	False	False	lesion_within_lentiform
+sub-r003s002	6688	1	True	1503.0	False	False	lesion_within_lentiform
+sub-r003s003	171930	1	True	3510.0	False	False	lesion_within_lentiform
+sub-r003s004	144031	1	True	3564.0	False	False	lesion_within_lentiform
+sub-r003s005	230745	1	True	3307.0	False	False	lesion_within_lentiform
+sub-r003s006	1104	1	True	244.0	False	False	lesion_within_lentiform
+sub-r003s007	4245	1	True	144.0	False	False	lesion_within_lentiform
+sub-r003s008	140210	1	True	3481.0	False	False	lesion_within_lentiform
 sub-r003s009	43979	3	False		False	False	multiple_lesion_components
 sub-r003s010	360	3	False		False	False	multiple_lesion_components
-sub-r003s011	13189	1	True	3118.0	False	False	lesion_within_lentiform
-sub-r003s012	31040	1	True	3227.0	False	False	lesion_within_lentiform
-sub-r003s013	7354	1	True	2438.0	False	False	lesion_within_lentiform
-sub-r003s014	22295	1	True	193.0	False	False	lesion_within_lentiform
+sub-r003s011	13189	1	True	3080.0	False	False	lesion_within_lentiform
+sub-r003s012	31040	1	True	3051.0	False	False	lesion_within_lentiform
+sub-r003s013	7354	1	True	2490.0	False	False	lesion_within_lentiform
+sub-r003s014	22295	1	True	178.0	False	False	lesion_within_lentiform
 sub-r003s015	7827	3	False		False	False	multiple_lesion_components
 sub-r004s001	47787	2	False		False	False	multiple_lesion_components
 sub-r004s002	53083	2	False		False	False	multiple_lesion_components
@@ -71,56 +71,56 @@ sub-r004s004	339640	4	False		False	False	multiple_lesion_components
 sub-r004s005	3976	4	False		False	False	multiple_lesion_components
 sub-r004s006	5863	2	False		False	False	multiple_lesion_components
 sub-r004s007	9897	12	False		False	False	multiple_lesion_components
-sub-r004s008	1906	1	True	472.0	False	False	lesion_within_lentiform
-sub-r004s009	97176	1	True	3388.0	False	False	lesion_within_lentiform
+sub-r004s008	1906	1	True	448.0	False	False	lesion_within_lentiform
+sub-r004s009	97176	1	True	3522.0	False	False	lesion_within_lentiform
 sub-r004s010	25080	3	False		False	False	multiple_lesion_components
-sub-r004s011	66204	1	True	1369.0	False	False	lesion_within_lentiform
+sub-r004s011	66204	1	True	1309.0	False	False	lesion_within_lentiform
 sub-r004s012	15656	3	False		False	False	multiple_lesion_components
-sub-r004s013	74484	1	True	6486.0	False	False	lesion_within_lentiform
-sub-r004s014	12582	1	True	3264.0	False	False	lesion_within_lentiform
-sub-r004s015	66519	1	True	5385.0	False	False	lesion_within_lentiform
+sub-r004s013	74484	1	True	6587.0	False	False	lesion_within_lentiform
+sub-r004s014	12582	1	True	4286.0	False	False	lesion_within_lentiform
+sub-r004s015	66519	1	True	5555.0	False	False	lesion_within_lentiform
 sub-r004s016	7419	3	False		False	False	multiple_lesion_components
-sub-r004s017	47096	1	True	1327.0	False	False	lesion_within_lentiform
+sub-r004s017	47096	1	True	1289.0	False	False	lesion_within_lentiform
 sub-r004s018	58010	2	False		False	False	multiple_lesion_components
 sub-r004s019	72665	4	False		False	False	multiple_lesion_components
-sub-r004s020	122612	1	True	330.0	False	False	lesion_within_lentiform
+sub-r004s020	122612	1	True	333.0	False	False	lesion_within_lentiform
 sub-r004s021	32285	2	False		False	False	multiple_lesion_components
-sub-r004s022	59350	1	True	5042.0	False	False	lesion_within_lentiform
+sub-r004s022	59350	1	True	5080.0	False	False	lesion_within_lentiform
 sub-r004s023	38728	1	True	0.0	True	True	
-sub-r004s024	47537	1	True	1330.0	False	False	lesion_within_lentiform
+sub-r004s024	47537	1	True	3968.0	False	False	lesion_within_lentiform
 sub-r004s025	22017	4	False		False	False	multiple_lesion_components
 sub-r004s026	115455	1	True	0.0	True	True	
-sub-r004s027	118200	1	True	4820.0	False	False	lesion_within_lentiform
+sub-r004s027	118200	1	True	4936.0	False	False	lesion_within_lentiform
 sub-r004s028	79157	2	False		False	False	multiple_lesion_components
 sub-r004s029	64561	3	False		False	False	multiple_lesion_components
 sub-r004s030	152494	2	False		False	False	multiple_lesion_components
 sub-r004s031	10669	2	False		False	False	multiple_lesion_components
 sub-r004s032	94481	3	False		False	False	multiple_lesion_components
-sub-r004s033	396194	1	True	537.0	False	False	lesion_within_lentiform
-sub-r004s034	24138	1	True	3287.0	False	False	lesion_within_lentiform
-sub-r004s035	139979	1	True	345.0	False	False	lesion_within_lentiform
+sub-r004s033	396194	1	True	545.0	False	False	lesion_within_lentiform
+sub-r004s034	24138	1	True	3360.0	False	False	lesion_within_lentiform
+sub-r004s035	139979	1	True	363.0	False	False	lesion_within_lentiform
 sub-r004s036	8246	4	False		False	False	multiple_lesion_components
-sub-r004s037	20868	1	True	4149.0	False	False	lesion_within_lentiform
-sub-r005s015	496656	1	True	901.0	False	False	lesion_within_lentiform
-sub-r005s026	60	1	True	53.0	False	False	lesion_within_lentiform
+sub-r004s037	20868	1	True	4193.0	False	False	lesion_within_lentiform
+sub-r005s015	496656	1	True	1065.0	False	False	lesion_within_lentiform
+sub-r005s026	60	1	True	50.0	False	False	lesion_within_lentiform
 sub-r005s031	93838	3	False		False	False	multiple_lesion_components
 sub-r005s045	361	3	False		False	False	multiple_lesion_components
-sub-r005s046	102925	1	True	1670.0	False	False	lesion_within_lentiform
+sub-r005s046	102925	1	True	1762.0	False	False	lesion_within_lentiform
 sub-r005s048	212	1	True	0.0	True	True	
 sub-r005s049	20083	2	False		False	False	multiple_lesion_components
-sub-r005s055	631	1	True	387.0	False	False	lesion_within_lentiform
-sub-r005s058	17400	1	True	4149.0	False	False	lesion_within_lentiform
-sub-r005s068	70418	1	True	3046.0	False	False	lesion_within_lentiform
+sub-r005s055	631	1	True	390.0	False	False	lesion_within_lentiform
+sub-r005s058	17400	1	True	4145.0	False	False	lesion_within_lentiform
+sub-r005s068	70418	1	True	2999.0	False	False	lesion_within_lentiform
 sub-r005s069	6422	4	False		False	False	multiple_lesion_components
-sub-r005s070	759	1	True	244.0	False	False	lesion_within_lentiform
+sub-r005s070	759	1	True	222.0	False	False	lesion_within_lentiform
 sub-r005s073	449	1	True	0.0	True	True	
 sub-r005s074	237354	2	False		False	False	multiple_lesion_components
-sub-r005s075	24708	1	True	1957.0	False	False	lesion_within_lentiform
+sub-r005s075	24708	1	True	2092.0	False	False	lesion_within_lentiform
 sub-r005s076	1335	6	False		False	False	multiple_lesion_components
-sub-r005s077	1064	1	True	93.0	False	False	lesion_within_lentiform
+sub-r005s077	1064	1	True	104.0	False	False	lesion_within_lentiform
 sub-r005s081	12890	1	True	0.0	True	True	
 sub-r009s001	8031	2	False		False	False	multiple_lesion_components
-sub-r009s002	459	1	True	159.0	False	False	lesion_within_lentiform
+sub-r009s002	459	1	True	270.0	False	False	lesion_within_lentiform
 sub-r009s003	15244	7	False		False	False	multiple_lesion_components
 sub-r009s004	103910	3	False		False	False	multiple_lesion_components
 sub-r009s005	927	3	False		False	False	multiple_lesion_components
@@ -167,7 +167,7 @@ sub-r009s050	1865	4	False		False	False	multiple_lesion_components
 sub-r009s051	2761	4	False		False	False	multiple_lesion_components
 sub-r009s052	17424	4	False		False	False	multiple_lesion_components
 sub-r009s053	1550	4	False		False	False	multiple_lesion_components
-sub-r009s054	665	1	True	14.0	False	False	lesion_within_lentiform
+sub-r009s054	665	1	True	11.0	False	False	lesion_within_lentiform
 sub-r009s055	12911	1	True	0.0	True	True	
 sub-r009s056	150	3	False		False	False	multiple_lesion_components
 sub-r009s057	118	1	True	0.0	True	True	
@@ -190,8 +190,8 @@ sub-r009s077	14378	2	False		False	False	multiple_lesion_components
 sub-r009s078	1783	7	False		False	False	multiple_lesion_components
 sub-r009s079	82	1	True	0.0	True	True	
 sub-r009s082	56	1	True	0.0	True	True	
-sub-r009s083	91325	1	True	508.0	False	False	lesion_within_lentiform
-sub-r009s084	87	1	True	46.0	False	False	lesion_within_lentiform
+sub-r009s083	91325	1	True	542.0	False	False	lesion_within_lentiform
+sub-r009s084	87	1	True	69.0	False	False	lesion_within_lentiform
 sub-r009s085	30258	3	False		False	False	multiple_lesion_components
 sub-r009s086	1280	2	False		False	False	multiple_lesion_components
 sub-r009s087	1324	2	False		False	False	multiple_lesion_components
@@ -222,7 +222,7 @@ sub-r009s114	3805	8	False		False	False	multiple_lesion_components
 sub-r009s115	3520	1	True	0.0	True	True	
 sub-r009s117	951	2	False		False	False	multiple_lesion_components
 sub-r009s118	1265	1	True	0.0	True	True	
-sub-r009s119	1953	1	True	159.0	False	False	lesion_within_lentiform
+sub-r009s119	1953	1	True	803.0	False	False	lesion_within_lentiform
 sub-r009s120	835	2	False		False	False	multiple_lesion_components
 sub-r009s121	950	2	False		False	False	multiple_lesion_components
 sub-r009s122	73	1	True	0.0	True	True	
@@ -233,19 +233,19 @@ sub-r009s126	4520	9	False		False	False	multiple_lesion_components
 sub-r010s001	1641	1	True	0.0	True	True	
 sub-r010s002	6962	3	False		False	False	multiple_lesion_components
 sub-r010s003	8662	2	False		False	False	multiple_lesion_components
-sub-r010s004	556	1	True	352.0	False	False	lesion_within_lentiform
+sub-r010s004	556	1	True	219.0	False	False	lesion_within_lentiform
 sub-r010s005	10979	3	False		False	False	multiple_lesion_components
-sub-r010s006	2025	1	True	411.0	False	False	lesion_within_lentiform
-sub-r010s007	5825	1	True	815.0	False	False	lesion_within_lentiform
-sub-r010s008	945	1	True	367.0	False	False	lesion_within_lentiform
+sub-r010s006	2025	1	True	416.0	False	False	lesion_within_lentiform
+sub-r010s007	5825	1	True	783.0	False	False	lesion_within_lentiform
+sub-r010s008	945	1	True	342.0	False	False	lesion_within_lentiform
 sub-r010s009	1573	2	False		False	False	multiple_lesion_components
 sub-r010s010	744	3	False		False	False	multiple_lesion_components
-sub-r010s011	765	1	True	165.0	False	False	lesion_within_lentiform
+sub-r010s011	765	1	True	163.0	False	False	lesion_within_lentiform
 sub-r010s012	839	2	False		False	False	multiple_lesion_components
 sub-r010s013	1553	2	False		False	False	multiple_lesion_components
 sub-r010s014	321	3	False		False	False	multiple_lesion_components
 sub-r010s016	1649	2	False		False	False	multiple_lesion_components
-sub-r010s018	2377	1	True	466.0	False	False	lesion_within_lentiform
+sub-r010s018	2377	1	True	453.0	False	False	lesion_within_lentiform
 sub-r010s019	420	2	False		False	False	multiple_lesion_components
 sub-r010s021	559	3	False		False	False	multiple_lesion_components
 sub-r010s022	124	2	False		False	False	multiple_lesion_components
@@ -254,56 +254,56 @@ sub-r010s024	884	4	False		False	False	multiple_lesion_components
 sub-r010s026	836	1	True	797.0	False	False	lesion_within_lentiform
 sub-r010s027	834	4	False		False	False	multiple_lesion_components
 sub-r010s028	13026	2	False		False	False	multiple_lesion_components
-sub-r010s029	144	1	True	64.0	False	False	lesion_within_lentiform
-sub-r010s032	368	1	True	13.0	False	False	lesion_within_lentiform
+sub-r010s029	144	1	True	89.0	False	False	lesion_within_lentiform
+sub-r010s032	368	1	True	8.0	False	False	lesion_within_lentiform
 sub-r011s001	1669	2	False		False	False	multiple_lesion_components
 sub-r011s002	2358	2	False		False	False	multiple_lesion_components
 sub-r011s003	307	1	True	0.0	True	True	
 sub-r011s008	3713	2	False		False	False	multiple_lesion_components
-sub-r011s010	4925	1	True	542.0	False	False	lesion_within_lentiform
+sub-r011s010	4925	1	True	526.0	False	False	lesion_within_lentiform
 sub-r011s011	13	1	True	0.0	True	True	
-sub-r011s012	6811	1	True	1403.0	False	False	lesion_within_lentiform
+sub-r011s012	6811	1	True	1407.0	False	False	lesion_within_lentiform
 sub-r011s013	68	1	True	0.0	True	True	
 sub-r011s014	1357	3	False		False	False	multiple_lesion_components
 sub-r011s015	2782	1	True	0.0	True	True	
 sub-r011s016	1080	2	False		False	False	multiple_lesion_components
 sub-r011s017	1135	2	False		False	False	multiple_lesion_components
 sub-r011s018	2035	3	False		False	False	multiple_lesion_components
-sub-r011s019	915	1	True	145.0	False	False	lesion_within_lentiform
+sub-r011s019	915	1	True	210.0	False	False	lesion_within_lentiform
 sub-r011s020	2594	3	False		False	False	multiple_lesion_components
-sub-r011s021	161	1	True	108.0	False	False	lesion_within_lentiform
+sub-r011s021	161	1	True	127.0	False	False	lesion_within_lentiform
 sub-r011s022	565	3	False		False	False	multiple_lesion_components
 sub-r011s023	1147	3	False		False	False	multiple_lesion_components
-sub-r011s024	3742	1	True	958.0	False	False	lesion_within_lentiform
-sub-r011s025	2492	1	True	264.0	False	False	lesion_within_lentiform
+sub-r011s024	3742	1	True	947.0	False	False	lesion_within_lentiform
+sub-r011s025	2492	1	True	134.0	False	False	lesion_within_lentiform
 sub-r011s026	69	1	True	0.0	True	True	
 sub-r011s027	77	1	True	0.0	True	True	
 sub-r011s028	225	3	False		False	False	multiple_lesion_components
 sub-r011s029	5285	3	False		False	False	multiple_lesion_components
 sub-r011s030	4843	3	False		False	False	multiple_lesion_components
-sub-r011s031	602	1	True	496.0	False	False	lesion_within_lentiform
+sub-r011s031	602	1	True	490.0	False	False	lesion_within_lentiform
 sub-r011s032	1226	2	False		False	False	multiple_lesion_components
-sub-r011s033	89	1	True	78.0	False	False	lesion_within_lentiform
-sub-r011s034	1220	1	True	337.0	False	False	lesion_within_lentiform
+sub-r011s033	89	1	True	84.0	False	False	lesion_within_lentiform
+sub-r011s034	1220	1	True	333.0	False	False	lesion_within_lentiform
 sub-r014s002	108	1	True	0.0	True	True	
 sub-r014s004	221	1	True	0.0	True	True	
 sub-r014s008	209	2	False		False	False	multiple_lesion_components
 sub-r014s010	779	3	False		False	False	multiple_lesion_components
 sub-r014s015	243	2	False		False	False	multiple_lesion_components
 sub-r015s001	23966	2	False		False	False	multiple_lesion_components
-sub-r015s006	1469	1	True	17.0	False	False	lesion_within_lentiform
+sub-r015s006	1469	1	True	18.0	False	False	lesion_within_lentiform
 sub-r015s008	35874	3	False		False	False	multiple_lesion_components
-sub-r015s009	1015	1	True	37.0	False	False	lesion_within_lentiform
+sub-r015s009	1015	1	True	40.0	False	False	lesion_within_lentiform
 sub-r015s010	62252	5	False		False	False	multiple_lesion_components
 sub-r015s011	119731	12	False		False	False	multiple_lesion_components
 sub-r015s016	85149	2	False		False	False	multiple_lesion_components
 sub-r015s018	1776	2	False		False	False	multiple_lesion_components
 sub-r015s019	510	1	True	0.0	True	True	
-sub-r015s025	1678	1	True	202.0	False	False	lesion_within_lentiform
+sub-r015s025	1678	1	True	203.0	False	False	lesion_within_lentiform
 sub-r015s026	5325	4	False		False	False	multiple_lesion_components
 sub-r015s027	24406	2	False		False	False	multiple_lesion_components
 sub-r017s104	53648	8	False		False	False	multiple_lesion_components
-sub-r017s105	1085	1	True	68.0	False	False	lesion_within_lentiform
+sub-r017s105	1085	1	True	76.0	False	False	lesion_within_lentiform
 sub-r017s106	84227	12	False		False	False	multiple_lesion_components
 sub-r017s110	120009	4	False		False	False	multiple_lesion_components
 sub-r017s116	52387	6	False		False	False	multiple_lesion_components
@@ -314,59 +314,59 @@ sub-r018s001	30117	1	True	0.0	True	True
 sub-r018s007	67233	2	False		False	False	multiple_lesion_components
 sub-r018s008	52330	2	False		False	False	multiple_lesion_components
 sub-r018s010	575	1	True	0.0	True	True	
-sub-r018s011	108085	1	True	228.0	False	False	lesion_within_lentiform
+sub-r018s011	108085	1	True	9.0	False	False	lesion_within_lentiform
 sub-r018s012	52789	1	True	0.0	True	True	
 sub-r019s001	237	1	True	0.0	True	True	
 sub-r019s004	99442	6	False		False	False	multiple_lesion_components
 sub-r019s007	8244	13	False		False	False	multiple_lesion_components
-sub-r019s008	2631	1	True	519.0	False	False	lesion_within_lentiform
-sub-r019s009	16162	1	True	7463.0	False	False	lesion_within_lentiform
+sub-r019s008	2631	1	True	495.0	False	False	lesion_within_lentiform
+sub-r019s009	16162	1	True	7493.0	False	False	lesion_within_lentiform
 sub-r019s010	1227	1	True	0.0	True	True	
 sub-r019s012	2852	4	False		False	False	multiple_lesion_components
 sub-r023s001	2563	5	False		False	False	multiple_lesion_components
 sub-r023s002	69392	8	False		False	False	multiple_lesion_components
 sub-r023s003	152700	11	False		False	False	multiple_lesion_components
-sub-r023s007	4314	1	True	82.0	False	False	lesion_within_lentiform
+sub-r023s007	4314	1	True	70.0	False	False	lesion_within_lentiform
 sub-r023s008	204504	4	False		False	False	multiple_lesion_components
 sub-r023s009	141278	5	False		False	False	multiple_lesion_components
-sub-r023s014	4149	1	True	1917.0	False	False	lesion_within_lentiform
+sub-r023s014	4149	1	True	1892.0	False	False	lesion_within_lentiform
 sub-r023s017	131165	1	True	0.0	True	True	
 sub-r024s002	123842	33	False		False	False	multiple_lesion_components
 sub-r024s003	33781	4	False		False	False	multiple_lesion_components
 sub-r024s005	51291	1	True	0.0	True	True	
 sub-r024s008	5483	3	False		False	False	multiple_lesion_components
 sub-r024s011	5568	3	False		False	False	multiple_lesion_components
-sub-r024s012	528	1	True	8.0	False	False	lesion_within_lentiform
-sub-r024s013	546	1	True	190.0	False	False	lesion_within_lentiform
+sub-r024s012	528	1	True	7.0	False	False	lesion_within_lentiform
+sub-r024s013	546	1	True	182.0	False	False	lesion_within_lentiform
 sub-r024s014	5164	4	False		False	False	multiple_lesion_components
 sub-r024s018	19138	7	False		False	False	multiple_lesion_components
 sub-r024s019	123248	15	False		False	False	multiple_lesion_components
 sub-r024s021	874	1	True	0.0	True	True	
 sub-r027s001	4246	2	False		False	False	multiple_lesion_components
-sub-r027s006	644	1	True	71.0	False	False	lesion_within_lentiform
-sub-r027s009	63298	1	True	3547.0	False	False	lesion_within_lentiform
-sub-r027s013	1497	1	True	155.0	False	False	lesion_within_lentiform
-sub-r027s015	5247	1	True	1746.0	False	False	lesion_within_lentiform
-sub-r027s017	10922	1	True	978.0	False	False	lesion_within_lentiform
-sub-r027s023	34330	1	True	231.0	False	False	lesion_within_lentiform
+sub-r027s006	644	1	True	62.0	False	False	lesion_within_lentiform
+sub-r027s009	63298	1	True	3586.0	False	False	lesion_within_lentiform
+sub-r027s013	1497	1	True	154.0	False	False	lesion_within_lentiform
+sub-r027s015	5247	1	True	1954.0	False	False	lesion_within_lentiform
+sub-r027s017	10922	1	True	980.0	False	False	lesion_within_lentiform
+sub-r027s023	34330	1	True	241.0	False	False	lesion_within_lentiform
 sub-r027s031	91444	1	True	0.0	True	True	
 sub-r027s032	1425	1	True	1.0	False	False	lesion_within_lentiform
 sub-r027s035	26097	2	False		False	False	multiple_lesion_components
-sub-r027s041	2783	1	True	158.0	False	False	lesion_within_lentiform
+sub-r027s041	2783	1	True	334.0	False	False	lesion_within_lentiform
 sub-r027s042	17925	2	False		False	False	multiple_lesion_components
-sub-r027s047	12541	1	True	4294.0	False	False	lesion_within_lentiform
-sub-r027s048	146575	1	True	199.0	False	False	lesion_within_lentiform
-sub-r027s050	12150	1	True	114.0	False	False	lesion_within_lentiform
+sub-r027s047	12541	1	True	4346.0	False	False	lesion_within_lentiform
+sub-r027s048	146575	1	True	179.0	False	False	lesion_within_lentiform
+sub-r027s050	12150	1	True	105.0	False	False	lesion_within_lentiform
 sub-r027s052	681	1	True	0.0	True	True	
 sub-r028s002	33957	2	False		False	False	multiple_lesion_components
 sub-r028s004	3300	2	False		False	False	multiple_lesion_components
 sub-r028s005	4920	1	True	0.0	True	True	
 sub-r028s007	5095	3	False		False	False	multiple_lesion_components
-sub-r028s008	75072	1	True	10.0	False	False	lesion_within_lentiform
-sub-r028s009	4644	1	True	65.0	False	False	lesion_within_lentiform
+sub-r028s008	75072	1	True	9.0	False	False	lesion_within_lentiform
+sub-r028s009	4644	1	True	66.0	False	False	lesion_within_lentiform
 sub-r028s011	428	1	True	0.0	True	True	
 sub-r028s012	3618	1	True	0.0	True	True	
-sub-r028s013	12381	1	True	2561.0	False	False	lesion_within_lentiform
+sub-r028s013	12381	1	True	2576.0	False	False	lesion_within_lentiform
 sub-r028s014	8647	1	True	0.0	True	True	
 sub-r028s017	3078	2	False		False	False	multiple_lesion_components
 sub-r028s020	25264	1	True	0.0	True	True	
@@ -378,11 +378,11 @@ sub-r031s004	3101	8	False		False	False	multiple_lesion_components
 sub-r031s005	2747	5	False		False	False	multiple_lesion_components
 sub-r031s006	36535	1	True	0.0	True	True	
 sub-r031s007	86768	5	False		False	False	multiple_lesion_components
-sub-r031s008	2442	1	True	447.0	False	False	lesion_within_lentiform
+sub-r031s008	2442	1	True	469.0	False	False	lesion_within_lentiform
 sub-r031s009	85449	2	False		False	False	multiple_lesion_components
 sub-r031s010	2887	5	False		False	False	multiple_lesion_components
 sub-r031s011	49665	11	False		False	False	multiple_lesion_components
-sub-r031s012	8364	1	True	726.0	False	False	lesion_within_lentiform
+sub-r031s012	8364	1	True	695.0	False	False	lesion_within_lentiform
 sub-r031s013	222005	2	False		False	False	multiple_lesion_components
 sub-r031s014	1767	2	False		False	False	multiple_lesion_components
 sub-r031s015	6379	11	False		False	False	multiple_lesion_components
@@ -391,20 +391,20 @@ sub-r031s017	689	4	False		False	False	multiple_lesion_components
 sub-r031s018	15029	3	False		False	False	multiple_lesion_components
 sub-r031s019	11622	3	False		False	False	multiple_lesion_components
 sub-r031s020	9655	5	False		False	False	multiple_lesion_components
-sub-r031s021	3248	1	True	42.0	False	False	lesion_within_lentiform
+sub-r031s021	3248	1	True	46.0	False	False	lesion_within_lentiform
 sub-r031s022	212186	3	False		False	False	multiple_lesion_components
 sub-r031s023	726	2	False		False	False	multiple_lesion_components
 sub-r031s024	40818	3	False		False	False	multiple_lesion_components
 sub-r031s025	39117	8	False		False	False	multiple_lesion_components
-sub-r031s026	1283	1	True	16.0	False	False	lesion_within_lentiform
-sub-r031s027	1758	1	True	140.0	False	False	lesion_within_lentiform
+sub-r031s026	1283	1	True	18.0	False	False	lesion_within_lentiform
+sub-r031s027	1758	1	True	137.0	False	False	lesion_within_lentiform
 sub-r031s028	28066	4	False		False	False	multiple_lesion_components
 sub-r031s029	5981	6	False		False	False	multiple_lesion_components
-sub-r031s030	34754	1	True	426.0	False	False	lesion_within_lentiform
-sub-r031s031	3223	1	True	23.0	False	False	lesion_within_lentiform
+sub-r031s030	34754	1	True	572.0	False	False	lesion_within_lentiform
+sub-r031s031	3223	1	True	22.0	False	False	lesion_within_lentiform
 sub-r031s032	717	3	False		False	False	multiple_lesion_components
-sub-r031s033	44886	1	True	9.0	False	False	lesion_within_lentiform
-sub-r031s034	147547	1	True	4198.0	False	False	lesion_within_lentiform
+sub-r031s033	44886	1	True	2.0	False	False	lesion_within_lentiform
+sub-r031s034	147547	1	True	4064.0	False	False	lesion_within_lentiform
 sub-r031s035	79463	1	True	0.0	True	True	
 sub-r031s036	7704	6	False		False	False	multiple_lesion_components
 sub-r031s037	7201	3	False		False	False	multiple_lesion_components
@@ -412,74 +412,74 @@ sub-r034s003	45070	4	False		False	False	multiple_lesion_components
 sub-r034s006	4028	8	False		False	False	multiple_lesion_components
 sub-r034s007	81638	2	False		False	False	multiple_lesion_components
 sub-r034s008	2455	1	True	778.0	False	False	lesion_within_lentiform
-sub-r034s009	33589	1	True	1303.0	False	False	lesion_within_lentiform
-sub-r034s010	235	1	True	192.0	False	False	lesion_within_lentiform
-sub-r034s011	7209	1	True	12.0	False	False	lesion_within_lentiform
+sub-r034s009	33589	1	True	1340.0	False	False	lesion_within_lentiform
+sub-r034s010	235	1	True	172.0	False	False	lesion_within_lentiform
+sub-r034s011	7209	1	True	10.0	False	False	lesion_within_lentiform
 sub-r034s012	2045	2	False		False	False	multiple_lesion_components
 sub-r034s013	110638	1	True	0.0	True	True	
-sub-r034s014	22883	1	True	424.0	False	False	lesion_within_lentiform
+sub-r034s014	22883	1	True	432.0	False	False	lesion_within_lentiform
 sub-r034s015	6934	3	False		False	False	multiple_lesion_components
 sub-r034s021	8158	1	True	0.0	True	True	
 sub-r034s022	365	4	False		False	False	multiple_lesion_components
-sub-r034s025	4511	1	True	496.0	False	False	lesion_within_lentiform
-sub-r034s026	67193	1	True	614.0	False	False	lesion_within_lentiform
+sub-r034s025	4511	1	True	489.0	False	False	lesion_within_lentiform
+sub-r034s026	67193	1	True	532.0	False	False	lesion_within_lentiform
 sub-r034s032	401	2	False		False	False	multiple_lesion_components
 sub-r034s033	698	1	True	0.0	True	True	
 sub-r034s036	117	1	True	0.0	True	True	
-sub-r034s037	629	1	True	325.0	False	False	lesion_within_lentiform
+sub-r034s037	629	1	True	321.0	False	False	lesion_within_lentiform
 sub-r034s039	65455	3	False		False	False	multiple_lesion_components
-sub-r034s040	1860	1	True	119.0	False	False	lesion_within_lentiform
+sub-r034s040	1860	1	True	128.0	False	False	lesion_within_lentiform
 sub-r034s046	1035	1	True	0.0	True	True	
 sub-r034s047	1182	2	False		False	False	multiple_lesion_components
 sub-r034s048	1637	2	False		False	False	multiple_lesion_components
 sub-r035s003	271	1	True	0.0	True	True	
 sub-r035s005	1159	2	False		False	False	multiple_lesion_components
-sub-r035s006	25132	1	True	5707.0	False	False	lesion_within_lentiform
-sub-r035s007	5848	1	True	392.0	False	False	lesion_within_lentiform
+sub-r035s006	25132	1	True	5790.0	False	False	lesion_within_lentiform
+sub-r035s007	5848	1	True	353.0	False	False	lesion_within_lentiform
 sub-r035s011	1906	1	True	0.0	True	True	
 sub-r035s012	33994	4	False		False	False	multiple_lesion_components
 sub-r035s013	954	2	False		False	False	multiple_lesion_components
 sub-r035s014	47632	4	False		False	False	multiple_lesion_components
-sub-r038s005	130500	1	True	6881.0	False	False	lesion_within_lentiform
+sub-r038s005	130500	1	True	7588.0	False	False	lesion_within_lentiform
 sub-r038s006	1733	2	False		False	False	multiple_lesion_components
 sub-r038s007	483	4	False		False	False	multiple_lesion_components
-sub-r038s010	1143	1	True	1.0	False	False	lesion_within_lentiform
-sub-r038s014	137751	1	True	27.0	False	False	lesion_within_lentiform
+sub-r038s010	1143	1	True	18.0	False	False	lesion_within_lentiform
+sub-r038s014	137751	1	True	43.0	False	False	lesion_within_lentiform
 sub-r038s016	6257	1	True	0.0	True	True	
 sub-r038s017	59862	2	False		False	False	multiple_lesion_components
 sub-r038s018	1789	3	False		False	False	multiple_lesion_components
 sub-r038s020	3937	6	False		False	False	multiple_lesion_components
 sub-r038s021	542	1	True	0.0	True	True	
-sub-r038s022	42787	1	True	8102.0	False	False	lesion_within_lentiform
-sub-r038s023	2125	1	True	472.0	False	False	lesion_within_lentiform
-sub-r038s024	978	1	True	242.0	False	False	lesion_within_lentiform
+sub-r038s022	42787	1	True	7696.0	False	False	lesion_within_lentiform
+sub-r038s023	2125	1	True	462.0	False	False	lesion_within_lentiform
+sub-r038s024	978	1	True	158.0	False	False	lesion_within_lentiform
 sub-r038s025	29358	1	True	0.0	True	True	
 sub-r038s026	523	2	False		False	False	multiple_lesion_components
 sub-r038s028	51861	1	True	0.0	True	True	
-sub-r038s032	15528	1	True	3370.0	False	False	lesion_within_lentiform
-sub-r038s033	8119	1	True	2344.0	False	False	lesion_within_lentiform
+sub-r038s032	15528	1	True	3564.0	False	False	lesion_within_lentiform
+sub-r038s033	8119	1	True	2428.0	False	False	lesion_within_lentiform
 sub-r038s035	3549	2	False		False	False	multiple_lesion_components
-sub-r038s036	14618	1	True	4435.0	False	False	lesion_within_lentiform
-sub-r038s040	36763	1	True	7063.0	False	False	lesion_within_lentiform
+sub-r038s036	14618	1	True	4519.0	False	False	lesion_within_lentiform
+sub-r038s040	36763	1	True	6716.0	False	False	lesion_within_lentiform
 sub-r038s041	2817	1	True	0.0	True	True	
-sub-r038s043	89748	1	True	868.0	False	False	lesion_within_lentiform
+sub-r038s043	89748	1	True	859.0	False	False	lesion_within_lentiform
 sub-r038s047	17635	2	False		False	False	multiple_lesion_components
-sub-r038s048	61096	1	True	0.0	True	True	
+sub-r038s048	61096	1	True	20.0	False	False	lesion_within_lentiform
 sub-r038s049	118719	2	False		False	False	multiple_lesion_components
 sub-r038s054	8085	6	False		False	False	multiple_lesion_components
 sub-r038s056	205676	2	False		False	False	multiple_lesion_components
 sub-r038s057	1097	1	True	0.0	True	True	
 sub-r038s058	549	1	True	0.0	True	True	
-sub-r038s060	76072	1	True	262.0	False	False	lesion_within_lentiform
-sub-r038s061	195995	1	True	4.0	False	False	lesion_within_lentiform
+sub-r038s060	76072	1	True	276.0	False	False	lesion_within_lentiform
+sub-r038s061	195995	1	True	0.0	True	True	
 sub-r038s064	6622	5	False		False	False	multiple_lesion_components
 sub-r038s065	3145	5	False		False	False	multiple_lesion_components
 sub-r038s067	2102	4	False		False	False	multiple_lesion_components
 sub-r038s068	582	1	True	0.0	True	True	
-sub-r038s069	2498	1	True	686.0	False	False	lesion_within_lentiform
-sub-r038s071	113294	1	True	8777.0	False	False	lesion_within_lentiform
+sub-r038s069	2498	1	True	682.0	False	False	lesion_within_lentiform
+sub-r038s071	113294	1	True	9020.0	False	False	lesion_within_lentiform
 sub-r038s074	628	3	False		False	False	multiple_lesion_components
-sub-r038s078	285724	1	True	6206.0	False	False	lesion_within_lentiform
+sub-r038s078	285724	1	True	6596.0	False	False	lesion_within_lentiform
 sub-r038s081	52896	3	False		False	False	multiple_lesion_components
 sub-r038s082	2601	3	False		False	False	multiple_lesion_components
 sub-r038s084	41860	2	False		False	False	multiple_lesion_components
@@ -492,27 +492,27 @@ sub-r038s097	2612	7	False		False	False	multiple_lesion_components
 sub-r042s001	33	1	True	0.0	True	True	
 sub-r042s003	1806	2	False		False	False	multiple_lesion_components
 sub-r042s004	317	1	True	0.0	True	True	
-sub-r042s008	169725	1	True	279.0	False	False	lesion_within_lentiform
+sub-r042s008	169725	1	True	286.0	False	False	lesion_within_lentiform
 sub-r042s010	16148	1	True	0.0	True	True	
 sub-r042s011	4792	3	False		False	False	multiple_lesion_components
-sub-r042s013	14615	1	True	4179.0	False	False	lesion_within_lentiform
+sub-r042s013	14615	1	True	4176.0	False	False	lesion_within_lentiform
 sub-r042s015	14406	2	False		False	False	multiple_lesion_components
-sub-r042s018	224056	1	True	540.0	False	False	lesion_within_lentiform
+sub-r042s018	224056	1	True	541.0	False	False	lesion_within_lentiform
 sub-r042s021	6826	8	False		False	False	multiple_lesion_components
 sub-r042s023	51366	7	False		False	False	multiple_lesion_components
 sub-r042s025	217912	3	False		False	False	multiple_lesion_components
-sub-r042s028	219586	1	True	4008.0	False	False	lesion_within_lentiform
+sub-r042s028	219586	1	True	4214.0	False	False	lesion_within_lentiform
 sub-r042s029	41070	2	False		False	False	multiple_lesion_components
-sub-r042s030	6373	1	True	1117.0	False	False	lesion_within_lentiform
-sub-r042s032	126902	1	True	3979.0	False	False	lesion_within_lentiform
+sub-r042s030	6373	1	True	1125.0	False	False	lesion_within_lentiform
+sub-r042s032	126902	1	True	3986.0	False	False	lesion_within_lentiform
 sub-r042s033	12750	2	False		False	False	multiple_lesion_components
 sub-r042s035	9430	2	False		False	False	multiple_lesion_components
 sub-r044s002	168005	2	False		False	False	multiple_lesion_components
 sub-r044s003	43268	3	False		False	False	multiple_lesion_components
-sub-r045s002	5290	1	True	559.0	False	False	lesion_within_lentiform
+sub-r045s002	5290	1	True	555.0	False	False	lesion_within_lentiform
 sub-r045s003	9747	3	False		False	False	multiple_lesion_components
 sub-r046s001	5231	2	False		False	False	multiple_lesion_components
-sub-r046s005	217075	1	True	2630.0	False	False	lesion_within_lentiform
+sub-r046s005	217075	1	True	2586.0	False	False	lesion_within_lentiform
 sub-r046s006	1214	1	True	0.0	True	True	
 sub-r046s007	1427	2	False		False	False	multiple_lesion_components
 sub-r046s008	1135	2	False		False	False	multiple_lesion_components
@@ -530,30 +530,30 @@ sub-r047s017	9611	1	True	0.0	True	True
 sub-r047s018	66057	2	False		False	False	multiple_lesion_components
 sub-r047s021	192780	3	False		False	False	multiple_lesion_components
 sub-r047s026	153161	2	False		False	False	multiple_lesion_components
-sub-r047s027	21608	1	True	5207.0	False	False	lesion_within_lentiform
+sub-r047s027	21608	1	True	5297.0	False	False	lesion_within_lentiform
 sub-r047s031	73856	3	False		False	False	multiple_lesion_components
 sub-r047s035	116033	1	True	0.0	True	True	
 sub-r047s036	4385	3	False		False	False	multiple_lesion_components
 sub-r047s037	48023	2	False		False	False	multiple_lesion_components
-sub-r047s038	76507	1	True	6299.0	False	False	lesion_within_lentiform
-sub-r047s039	7232	1	True	58.0	False	False	lesion_within_lentiform
-sub-r047s041	179818	1	True	3742.0	False	False	lesion_within_lentiform
+sub-r047s038	76507	1	True	9667.0	False	False	lesion_within_lentiform
+sub-r047s039	7232	1	True	53.0	False	False	lesion_within_lentiform
+sub-r047s041	179818	1	True	4063.0	False	False	lesion_within_lentiform
 sub-r047s043	2787	3	False		False	False	multiple_lesion_components
-sub-r047s044	28806	1	True	5324.0	False	False	lesion_within_lentiform
+sub-r047s044	28806	1	True	5447.0	False	False	lesion_within_lentiform
 sub-r047s046	1009	1	True	0.0	True	True	
 sub-r047s048	1565	2	False		False	False	multiple_lesion_components
-sub-r047s050	2567	1	True	91.0	False	False	lesion_within_lentiform
+sub-r047s050	2567	1	True	74.0	False	False	lesion_within_lentiform
 sub-r048s002	281558	2	False		False	False	multiple_lesion_components
-sub-r048s004	59313	1	True	3720.0	False	False	lesion_within_lentiform
+sub-r048s004	59313	1	True	3565.0	False	False	lesion_within_lentiform
 sub-r048s006	50443	1	True	0.0	True	True	
-sub-r048s008	32836	1	True	3757.0	False	False	lesion_within_lentiform
-sub-r048s010	1420	1	True	261.0	False	False	lesion_within_lentiform
-sub-r048s011	1157	1	True	213.0	False	False	lesion_within_lentiform
-sub-r048s012	63734	1	True	70.0	False	False	lesion_within_lentiform
+sub-r048s008	32836	1	True	3754.0	False	False	lesion_within_lentiform
+sub-r048s010	1420	1	True	256.0	False	False	lesion_within_lentiform
+sub-r048s011	1157	1	True	252.0	False	False	lesion_within_lentiform
+sub-r048s012	63734	1	True	93.0	False	False	lesion_within_lentiform
 sub-r048s014	1112	1	True	0.0	True	True	
 sub-r048s015	267069	3	False		False	False	multiple_lesion_components
 sub-r048s016	280190	2	False		False	False	multiple_lesion_components
-sub-r048s018	107542	1	True	115.0	False	False	lesion_within_lentiform
+sub-r048s018	107542	1	True	116.0	False	False	lesion_within_lentiform
 sub-r048s021	46713	2	False		False	False	multiple_lesion_components
 sub-r048s022	3601	6	False		False	False	multiple_lesion_components
 sub-r048s029	480	1	True	0.0	True	True	
@@ -561,7 +561,7 @@ sub-r048s031	444	2	False		False	False	multiple_lesion_components
 sub-r048s032	7469	1	True	0.0	True	True	
 sub-r048s034	13363	5	False		False	False	multiple_lesion_components
 sub-r048s035	7744	6	False		False	False	multiple_lesion_components
-sub-r048s036	7686	1	True	1540.0	False	False	lesion_within_lentiform
+sub-r048s036	7686	1	True	1575.0	False	False	lesion_within_lentiform
 sub-r048s037	95223	1	True	18.0	False	False	lesion_within_lentiform
 sub-r048s038	5683	2	False		False	False	multiple_lesion_components
 sub-r048s039	1913	3	False		False	False	multiple_lesion_components
@@ -573,7 +573,7 @@ sub-r049s011	3664	5	False		False	False	multiple_lesion_components
 sub-r049s012	3262	3	False		False	False	multiple_lesion_components
 sub-r049s016	1528	2	False		False	False	multiple_lesion_components
 sub-r049s018	220	1	True	0.0	True	True	
-sub-r049s020	352	1	True	301.0	False	False	lesion_within_lentiform
+sub-r049s020	352	1	True	295.0	False	False	lesion_within_lentiform
 sub-r049s024	1390	1	True	0.0	True	True	
 sub-r049s025	523	1	True	0.0	True	True	
 sub-r049s026	922	3	False		False	False	multiple_lesion_components
@@ -586,13 +586,13 @@ sub-r050s008	375	1	True	0.0	True	True
 sub-r050s009	197	1	True	0.0	True	True	
 sub-r050s015	433	4	False		False	False	multiple_lesion_components
 sub-r052s001	3475	9	False		False	False	multiple_lesion_components
-sub-r052s002	1701	1	True	270.0	False	False	lesion_within_lentiform
+sub-r052s002	1701	1	True	264.0	False	False	lesion_within_lentiform
 sub-r052s007	1088	2	False		False	False	multiple_lesion_components
 sub-r052s010	228647	2	False		False	False	multiple_lesion_components
 sub-r052s011	3070	6	False		False	False	multiple_lesion_components
-sub-r052s014	55383	1	True	1077.0	False	False	lesion_within_lentiform
+sub-r052s014	55383	1	True	1270.0	False	False	lesion_within_lentiform
 sub-r052s015	1340	2	False		False	False	multiple_lesion_components
-sub-r052s016	5131	1	True	880.0	False	False	lesion_within_lentiform
+sub-r052s016	5131	1	True	1925.0	False	False	lesion_within_lentiform
 sub-r052s019	30799	4	False		False	False	multiple_lesion_components
 sub-r052s021	74928	3	False		False	False	multiple_lesion_components
 sub-r052s023	1024	1	True	0.0	True	True	

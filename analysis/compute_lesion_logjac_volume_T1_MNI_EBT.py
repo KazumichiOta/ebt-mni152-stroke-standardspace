@@ -42,9 +42,9 @@ Outputs:
 Usage (example):
   conda activate antspy
   python3 compute_lesion_logjac_volume_T1_MNI_EBT.py \
-    --root "/Volumes/Extreme Pro/ATLAS2.0/ATLAS_2_simple" \
+    --root "/path/to/ATLAS_workdir" \
     --mni-t1 "/usr/local/fsl/data/standard/MNI152_T1_1mm_brain.nii.gz" \
-    --ebt-t1 "/Users/kazumichiota/Desktop/elderly-brain-template/Elderly_brain_T1_template_1mm.nii.gz"
+    --ebt-t1 "/path/to/Elderly_brain_T1_template_1mm.nii.gz"
 """
 
 import argparse
