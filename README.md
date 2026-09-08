@@ -171,8 +171,6 @@ No lentiform lesion:           114
 Final analysis subset:         114
 ```
 
-The CST-overlap criterion was **not** used for this supplementary analysis.
-
 The table provides the subject-level inclusion and exclusion status used to identify the final analysis subset.
 
 For Supplementary Table S9, subjects with:
@@ -357,7 +355,7 @@ Ventricular fraction is calculated as:
 ventricular fraction = ventricular volume / ICV
 ```
 
-The resulting ventricular fraction is used as an imaging-based proxy of atrophy and ventricular enlargement.
+The resulting ventricular fraction is used as an atrophy proxy in the associated manuscript.
 
 ---
 
@@ -716,41 +714,7 @@ The expected final analysis subset is **n = 114**.
 
 ---
 
-# 7. Interpretation of the lentiform supplementary analysis
-
-The supplementary lentiform analysis was designed as an additional check of relative lesion location after round-trip transformation.
-
-It does **not** test CST overlap and does not use CST overlap as an inclusion criterion.
-
-The analysis is restricted to cases with:
-
-1. a single contiguous lesion, and
-2. no lesion voxels within the bilateral lentiform nucleus.
-
-The purpose of the analysis is to assess whether switching standard spaces produces gross changes in the spatial relationship between a lesion and a stable deep gray-matter landmark.
-
-The lentiform nucleus was therefore used as an anatomical anchor, and the native-space lentiform-to-lesion COM distance was compared with the corresponding distance after MNI152 and EBT round-trip transformation.
-
-The final analysis subset contained **114 cases**.
-
-For the manuscript dataset, the reconstructed group-level values are approximately:
-
-```text
-Native distance             ≈ 51.15 ± 19.26 mm
-MNI152 round-trip distance  ≈ 51.16 ± 19.25 mm
-EBT round-trip distance     ≈ 51.15 ± 19.26 mm
-MNI152 distance error       ≈ 0.04 ± 0.05 mm
-EBT distance error          ≈ 0.04 ± 0.05 mm
-Δerror (EBT − MNI152)       ≈ 0.0007 mm
-95% CI                      ≈ −0.0089 to 0.0103 mm
-paired t-test p             ≈ 0.884
-```
-
-These measurements are provided as an additional check of preservation of relative lesion location under the two standard-space conditions.
-
----
-
-# 8. Data redistribution and source-data scope
+# 7. Data redistribution and source-data scope
 
 This repository does **not** redistribute ATLAS R2.0 subject-level MRI images or lesion masks.
 
@@ -776,7 +740,7 @@ https://doi.org/10.1038/s41597-022-01401-7
 
 ---
 
-# 9. Software environment
+# 8. Software environment
 
 The released scripts were developed using:
 
@@ -796,9 +760,9 @@ Please refer to Supplementary Table S1 of the associated manuscript for the full
 
 ---
 
-# 10. License
+# 9. License
 
-## 10.1 Code
+## 9.1 Code
 
 All code in `analysis/` is released under the **MIT License**.
 
@@ -826,7 +790,7 @@ SOFTWARE.
 
 ---
 
-## 10.2 Released derived data
+## 9.2 Released derived data
 
 Released derived data in `data/` are provided under **CC BY 4.0**, unless otherwise noted.
 
@@ -839,7 +803,7 @@ under the terms of the **Creative Commons Attribution 4.0 International (CC BY 4
 
 ---
 
-## 10.3 Third-party source data
+## 9.3 Third-party source data
 
 ATLAS R2.0 subject-level MRI images and lesion masks are **not** redistributed in this repository.
 
@@ -847,7 +811,7 @@ Use of the source dataset remains subject to the original ATLAS R2.0 terms.
 
 ---
 
-# 11. Citation
+# 10. Citation
 
 If you use these released data or scripts, please cite the associated article and repository DOI.
 
@@ -866,7 +830,7 @@ https://doi.org/10.5281/zenodo.19472368
 
 ---
 
-# 12. Related repository
+# 11. Related repository
 
 The elderly brain template itself is distributed separately through the main EBT repository:
 
@@ -876,7 +840,7 @@ The present repository does not redistribute the EBT template and focuses specif
 
 ---
 
-# 13. Contact
+# 12. Contact
 
 **Corresponding author:** Kazumichi Ota  
 **Email:** kota24@saitama-med.ac.jp
